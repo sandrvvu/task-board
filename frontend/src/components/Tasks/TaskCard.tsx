@@ -49,7 +49,7 @@ const TaskCard: FC<TaskCardProps> = ({
           <div className="flex gap-2 items-center justify-start mb-2">
             <IoIosCalendar className="text-xl" />
             <p className="text-xs text-gray-700 font-semibold">
-            {moment(dueDate).format("DD/MM/YYYY")}
+            {moment(dueDate, 'YYYY-MM-DD').format("DD/MM/YYYY")}
             </p>
           </div>
         )}

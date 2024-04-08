@@ -48,7 +48,7 @@ const TaskDetails: FC<TaskCardProps> = ({
                 <p className="text-sm">Due date</p>
               </div>
               <p className="text-sm font-semibold">
-                {moment(dueDate).utc().format("DD/MM/YYYY")}
+              {moment(dueDate, 'YYYY-MM-DD').format("DD/MM/YYYY")}
               </p>
             </>
           )}

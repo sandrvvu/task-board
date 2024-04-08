@@ -89,7 +89,7 @@ const TaskForm: FC<TaskFormProps> = ({ taskId, taskList }: TaskFormProps) => {
   };
 
   const dueDateString = previousCardData?.dueDate
-  ? moment(previousCardData.dueDate).format('YYYY-MM-DD')
+  ? moment.utc(previousCardData.dueDate, 'YYYY-MM-DD').format('YYYY-MM-DD')
   : '';
 
   return (
